@@ -1,0 +1,135 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}关于钱途{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner banner-about-us">
+            <div class="banner-about-us">
+                <h2 class="display-none">About Us</h2>
+            </div>
+        </div>
+
+        {{ pageNav.render(2) }}
+
+        <div class="page-main container">
+            <article class="page-article clearfix">
+                <section class="page-article-bd">
+                    <ul class="timeline">
+                        <li class="dot1">
+                            <h5>公司成立</h5>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>2014.1</p>
+                            </div>
+                        </li>
+                        <li class="dot2">
+                            <p class="timeline-txt c">
+                                信用惠上线
+                            </p>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>2014.10</p>
+                            </div>
+                        </li>
+                        <li class="dot3">
+                            <p class="timeline-txt">
+                                创新推出“E+账户”
+                            </p>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>2015.5</p>
+                            </div>
+                        </li>
+                        <li class="dot4">
+                            <p class="timeline-txt c">
+                                获得IDG资本
+                                天使投资
+                            </p>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>2015.7</p>
+                            </div>
+                        </li>
+                        <li class="dot5">
+                            <p class="timeline-txt">
+                                “E+账户”产业金融产品
+                                迅速推广，与山东高速、允升科
+                                技、万科、中国人保等30多家核心企业达成战略合作
+                            </p>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>2015.8 <br/>~ <br/>2016.3</p>
+                            </div>
+                        </li>
+                        <li class="dot6">
+                            <p class="timeline-txt text-align-center">
+                                钱途互联旗下<br />
+                                全资保理公司成立
+                            </p>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>2016.3</p>
+                            </div>
+                        </li>
+                        <li class="dot7">
+                            <p class="timeline-txt c">
+                                更多精彩<br />
+                                ......
+                            </p>
+                            <div class="line"></div>
+                            <div class="timeline-dot">
+                                <p>未来</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+        $(function() {
+            $('.timeline').addClass('active');
+            $('.dot7 .timeline-dot').on('tranditionend webkitTransitionEnd mozTransitionEnd', function() {
+                $(this).addClass('loopZoom');
+            })
+        })
+    </script>
+{% endblock %}

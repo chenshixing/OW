@@ -1,0 +1,89 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}新快网-“E+账户”,招商银行小企业E家互联网金融重磅创新{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(2) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>新快网-“E+账户”,招商银行小企业E家互联网金融重磅创新</h1>
+                            <div class="article-meta">
+                                <span class="source">来源：新快网</span>
+                                <time>2014-07-15</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>
+                                <img src="{{static}}/images/about/news-7.jpg" alt="">
+                            </p>
+
+                            <p><a href="http://news.xkb.com.cn/caijing/2014/0715/337209.html" target="_blank">http://news.xkb.com.cn/caijing/2014/0715/337209.html</a></p>
+
+                            <p>自2013年以来,互联网金融战场硝烟弥漫,网络巨头的跨界创新风起云涌。面对复杂多变的市场形势,招商银行建设了开放式、综合化的互联网金融服务平台小企业E家,探索互联网环境下全方位服务和经营中小企业客户的商业模式。</p>
+
+                            <p>小企业E家在充分发挥招商银行网上企业银行既有优势基础上,围绕中小企业“存、贷、汇”等基本金融需求,创新开发了企业在线信用评级、网贷易、惠结算、我要理财等互联网金融产品,并实现了与银行中后台信贷管理系统、客户关系管理系统等的对接,初步形成了从客户接触、跟进营销,商机发掘、产品销售到在线业务办理的全链条“O2O”(online to offline)经营模式。</p>
+
+                            <p>本年度,秉承着提升客户体验为中心、构建平台和获取大数据的目标,招商银行小企业E家推出了又一具有重大价值的创新型互联网金融产品—“E+账户”。在整合内外部互联网渠道和资源基础上,创新研发了面向广泛的行内外企业客户的“E+账户”余额理财、份额支付、定期理财等完全基于互联网的投资理财业务。</p>
+
+                            <p>余额理财业务是目前国内同业中首个推出的企业版类“余额宝”产品,客户可直接通过互联网实现货币资金与货币基金份额的自由转换;份额支付业务实现了货币基金份额的在线支付和交易结算,在降低客户交易成本的同时提升了支付效率;定期理财业务借助投融资平台的成功经验,创新构建了全程互联网环境的B2B模式企业闲置资金进行投资理财的应用场景。</p>
+                            
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

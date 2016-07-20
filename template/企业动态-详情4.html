@@ -1,0 +1,88 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}招商银行小企业E家信用惠将引进高端电商走秀网{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(1) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>招商银行小企业E家信用惠将引进高端电商走秀网</h1>
+                            <div class="article-meta">
+                                <mark>招商银行</mark>
+                                <mark>小企业E家</mark>
+                                <mark>信用惠</mark>
+                                <mark>电商</mark>
+                                <mark>走秀网</mark>
+                                <span>|</span>
+                                <span class="source">来源：钱途互联</span>
+                                <time>2014-10-19</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>近日，小企业e家信用惠服务提供商——钱途互联与走秀网达成协议，走秀网将在近期入驻信用惠，为小企业e家的投资用户提供高端电商服务。据钱途互联相关负责人介绍，投资项目起息日起投资用户就享有与本息相同的信用额度，该信用可用于购买走秀网商品，而且消费期间不影响投资收益，待项目到期后由小企业e家统一结算，真正让用户实现投资与消费两者兼得。</p>
+
+                            <p>2014年，互联网金融持续升温，在传统P2P企业仍在为资金安全、平台信誉寻找靠山之时，以用户需求及体验为核心的互联网金融服务理念已经被越来越多的传统金融机构所重视。小企业e家自2013年上线以来，为投资用户提供了大量稳健可靠的投资项目，也解决了大批中小企业的融资需求，赢得了良好的市场口碑。</p>
+
+                            <p>近日，小企业e家信用惠的服务提供商钱途互联与走秀网达成合作协议，后者将在本月内入驻信用惠，为小企业e家投资用户提供高端、时尚的奢侈品电商服务。</p>
+                            <p>据钱途互联相关负责人介绍，在小企业e家投资之后，投资用户即享有与本息相同的信用额度，信用期限从项目起息日起计算，至项目到期前2天止。投资用户可以使用该信用额度在信用惠进行消费，待投资到期后再由小企业e家统一清算。</p>
+                            <p>“信用惠的出发点是为投资者提供增值服务，” 钱途互联相关负责人表示，其最大特色在于用户投资的资金在投资期间不影响消费，甚至可以把要消费的资金先行投资赚钱，待授信后再进行消费。“额度高、预支周期长、零费用、享受预期收益是信用惠的四大特点，让投资者投资和消费两者兼得。”</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

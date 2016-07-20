@@ -1,0 +1,95 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}招商银行举办首届互联网金融创新研讨会 小企业E家信用惠成亮点{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(1) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>招商银行举办首届互联网金融创新研讨会 小企业E家信用惠成亮点</h1>
+                            <div class="article-meta">
+                                <mark>招商银行</mark>
+                                <mark>互联网金融</mark>
+                                <mark>小企业e家</mark>
+                                <mark>信用惠</mark>
+                                <span>|</span>
+                                <span class="source">来源：钱途互联</span>
+                                <time>2014-12-04</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>
+                                <img src="{{static}}/images/about/zz04.jpg" alt="">
+                            </p>
+                            <p>12月4日，由众金所协助招商银行举办的“创新合作•普惠共赢——招商银行首届互联网金融创新研讨会”在深圳香格里拉大酒店2楼2号宴会厅举行。招商银行相关领导、众金所副总裁宁小军、艾瑞咨询集团高级分析师王维东、以及来自近百家企业、机构的相关负责人出席了此次研讨会。据悉，此次研讨会研讨了互联网金融趋势、互联网时代下的商业银行创新策略、互联网金融应用场景化等热点问题。</p>
+
+                            <p>
+                                <img src="{{static}}/images/about/zz05.jpg" alt="">
+                            </p>
+                            <p>本次研讨会上，招商银行相关负责人向与会嘉宾分享了招商银行·小企业E家首创的消费金融新模式---“信用惠商城”（简称“信用惠”）。据悉， “信用惠”区别于“京东白条”、“天猫分期”等赊账购物服务方式的独特之处在于：小企业e家平台整合招商银行优势资源，并根据会员的投资记录综合评估，授予可用信用作为其消费凭证。获得信用额度的会员，在“信用惠”消费时能享受额度高、预支周期长、零费用和享受预期收益等四大特权。</p>
+
+                            <p>
+                                <img src="{{static}}/images/about/zz06.jpg" alt="">
+                            </p>
+
+                            <p>以信用作为支付方式，“信用惠”无疑是具有独特性和创新性的，一方面加深了互联网金融内涵，提升用户的互联网购物体验、完善互联网金融服务内容；另一方面也在为中国消费金融的发展提供新思路。以信用作为支付方式，正是面卡信用支付的创新支付理念。如果说互联网金融是风口，那么创设了广阔的消费应用场景的消费金融就是吹着东风的蓝海。在这片蓝海上，面卡信用支付将携手各界同仁，一齐见证金融新时代。</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

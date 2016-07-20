@@ -1,0 +1,89 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}搜狐财经-资金躺着也挣钱——招商银行携手招商基金打造“e+账户”理财神器{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(2) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>搜狐财经-资金躺着也挣钱——招商银行携手招商基金打造“e+账户”理财神器</h1>
+                            <div class="article-meta">
+                                <span class="source">来源：搜狐财经</span>
+                                <time>2013-12-27</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>
+                                <img src="{{static}}/images/about/news-9.jpg" alt="">
+                            </p>
+
+                            <p><a href="http://business.sohu.com/20131227/n392483256.shtml" target="_blank">http://business.sohu.com/20131227/n392483256.shtml</a></p>
+
+                            <p>12月20日，在招商银行和招商基金联合主办的“互联网投资之道—小企业e家财富沙龙暨e+账户推介会”活动上，招商银行和招商基金联合推出的“小企业e家—e+账户”服务引起与会中小企业负责人的强烈反响与关注。</p>
+
+                            <p>据悉，e+账户是由招商银行联合招商基金为中小企业量身定相关公司股票走势招商银行19.43+0.140.73%制的全新网上金融服务，该服务借助招商银行“小企业e家”互联网金融服务平台，通过与招商基金旗下招商现金增值基金绑定，为用户带来远超活期存款的高收益，同时具有流动性好、风险低、开户操作简单便捷等特点。</p>
+
+                            <p>以e+账户真实的交易数据为例，某企业用户在2013年11月12日至2013年12月3日期间分3次共充值1820万，又因资金结算需要先后4次提现1141.42万。倘若企业将该笔资金放在银行活期账户，截止到12月19日，活期存款利息收入不足2160元；而该企业通过使用e+账户，累计收益超过26900元，两种不同方式的收益差距高达12倍。</p>
+
+                            <p>据了解，招商银行正在推动小企业e家、e+账户与国内多个供应链核心企业系统化创新合作，将更好地助力企业进行资源整合，实现价值最大化。招商基金有关人士表示，e+账户以招商银行小企业e家为基础，打造针对中小企业业务的创新互联网金融服务，将不断以金融电子商务推动企业智能理财新模式。</p>
+
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

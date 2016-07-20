@@ -1,0 +1,74 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}关于钱途{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-legal"></div>
+            <h2 class="display-none">Contact Us</h2>   
+        </div>
+
+        {{ pageNav.legal() }}
+
+        <div class="page-main container">
+            <article class="page-article clearfix">
+                <!--<img src="{{ static }}/images/about/img1.jpg" alt="前途互联" class="pull-right about-article-post">-->
+                <section class="page-article-bd page-doc">
+                    <p>一、本网站除转载信息外的所有材料的版权属广东钱途互联商务服务有限公司所有。未经广东钱途互联商务服务有限公司书面许可，不得更改、销售或租赁上述材料，或以任何其他形式将上述材料用于任何营利事项中。</p>
+                    <p>
+                        二、任何机构或者个人使用本网站，均应遵守中国有关法律与本声明，不得破坏本网站运行安全，不得利用本网站进行任何违法活动，不得损害广东钱途互联商务服务有限公司的合法权益。
+                    </p>
+                    <p>
+                        三、任何机构或者个人向其他网站提供至本网站的链接，应符合下列条件：<br />
+                        1. 链接必须指向<a href="http://www.frontpay.cn">www.frontpay.cn</a>而不是本网站的其它页面；<br/>
+                        2. 链接必须是文本链接，上面清晰地写明"广东钱途互联商务服务有限公司" 或<a href="http://www.frontpay.cn">www.frontpay.cn</a><br/>
+                        3. 广东钱途互联商务服务有限公司保留随时收回链接者链接本网站的权利。
+                    </p>
+                    <p>
+                        四、广东钱途互联商务服务有限公司可随时修改或更新本网站的所有材料，本网站对所提供的内容力求准确、完整、及时，但并不对其准确性和完整性做出任何保证。本网站转载的内容不代表本司的观点。在任何情况下，对于因使用或转引本网站材料而导致的任何损失，广东钱途互联商务服务有限公司无须承担法律责任。
+                    </p>
+                </section>
+            </article>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

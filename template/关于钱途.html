@@ -1,0 +1,73 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}关于钱途{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-about-us">
+                <h2 class="display-none">About Us</h2>
+            </div>
+        </div>
+
+        {{ pageNav.render() }}
+
+        <div class="page-main container">
+            <article class="page-article clearfix">
+                <img src="{{ static }}/images/about/company.jpg" alt="前途互联" class="pull-right about-article-post">
+                <section class="page-article-bd page-single pull-left introduce">  
+                    <header class="clearfix">
+                        <h3 class="article-title pull-left">广东钱途互联商务服务有限公司</h3>
+                        <small>（以下简称“钱途互联”）</small>
+                    </header>
+                    <p>
+                        <b>成立</b>于2014年，公司位于广州天河CBD中心区的核心地段，目前员工近百人，在深圳设立办事处。钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。
+                    </p>
+                    <p>
+                        <b>目前</b>，钱途互联业务已辐射金融、地产、餐饮、医药等多个行业，并与允升工业、山东高速、万科地产、九州通等数百家知名企业建立紧密的合作关系，根据合作伙伴的实际需求定制产品，在实现E+账户功能的基础上，帮助合作伙伴对接优质金融资源，安全高效地解决了增值、融资和结算需求，以及互联网金融领域的业务拓展和场景搭建。钱途互联的创新能力和专业服务获得众多合作伙伴和行业机构的高度认可，并于2015年获得国际顶级风投机构IDG资本的投资。
+                    </p>
+                </section>
+            </article>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

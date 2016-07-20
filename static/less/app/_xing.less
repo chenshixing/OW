@@ -1,0 +1,136 @@
+.w1000{
+  width: @OW_width_2_main;
+  margin: 0 auto;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+
+//公共banner
+.mod-banner{
+  height: 486px;
+  h1{
+    color: @OW_domColor2;
+    font-size: @fontSize-largest+4px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    >span{
+      font-size:@fontSize-larger+2px ;
+      font-weight: normal;
+    }
+  }
+  .info{
+    width:485px;
+    color: @OW_domColor2;
+    line-height: 22px;
+    >p{
+      margin-bottom: 10px;
+    }
+    ul{
+      padding-left: 10px;
+      li{
+        list-style:disc;
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+}
+//公共信息介绍
+.mod-info-list{
+  background: @bgColor-secondary;
+  .info-list{
+    padding: 50px 0 25px 0;
+    >li{
+      float: left;
+      display: inline;
+      width: 290px;
+      margin-right: 65px;
+      .text{
+        padding: 15px 0 0 30px;
+        >p{
+          color: @fontColor-text;
+        }
+      }
+      &.last-li{
+        margin-right: 0;
+      }
+    }
+    &.info-4{
+      >li{
+        width: 190px;
+        margin-right: 80px;
+        .text{
+          padding: 15px 0 0 0;
+        }
+        &.last-li{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+//产品优势
+.mod-advantage{
+  padding:60px 0 0 0;
+  .advantage-list{
+    padding: 35px 0 30px 0;
+    border-bottom: 1px solid @borderColor-base;
+    li{
+      margin: 0 0 20px 0;
+      >p{
+        color: @fontColor-text;
+        padding: 5px 0 0 25px;
+      }
+    }
+  }
+}
+
+//成功案例模块
+.success-case{
+  padding: 40px 0 0 0;
+  .case-list{
+    padding: 35px 0 70px 0;
+    li{
+      float: left;
+      display: inline;
+      margin: 0 20px 20px 0;
+      &.last-li{
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+
+
+//02供应链融资
+.supply-wrap{
+  .supply-banner{
+    background: url('@{images-url}supply-banner.jpg?v=20160310') center top no-repeat;
+    padding-top: 130px;
+  }
+  .mod-advantage{
+    background: url('@{images-url}supply-bg.jpg?v=20160310') right 105px no-repeat;
+  }
+}
+
+//03债权支付
+.debt-wrap{
+  .debt-banner{
+    background: url('@{images-url}debt-banner.jpg?v=20160310') center top no-repeat;
+    padding-top: 95px;
+  }
+  .mod-advantage{
+    background: url('@{images-url}debt-bg.jpg?v=20160310') right 70px no-repeat;
+  }
+}

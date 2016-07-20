@@ -1,0 +1,282 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}钱途互联{% endblock %}
+
+{% block keywords %}钱途互联，钱沿支付，钱途，QIANTUHULIAN，frontpay，E+账户，第三方支付，债权支付，供应链融资，产业金融，金融服务，创新支付，互联网融资，信用支付，信用消费，商务金融{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统，对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}class="index-body"{% endblock %}
+
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="index-wrap">
+        <div class="video-box" id="video-box">
+                <!--<video class="video" id="video" autoplay width="100%">
+                    <source type="video/mp4" src="{{ static }}/images/video.mp4">
+                    您的浏览器不支持Video标签，视频无法播放。建议使用最新的Chrome（谷歌）浏览器。
+                </video>-->
+        </div>
+        <div class="index-bg3"></div>
+        <div class="index-bg1"></div>
+        <div class="index-bg2"></div>
+        <div class="index-map" style="display: block">
+            <div class="map-frame">
+                <div class="map-line"></div>
+                <div class="mapoint g1-1">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (13).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g1-2">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (9).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g1-3">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (5).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g2-1">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (12).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g2-2">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (14).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g2-3">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (11).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g3-1">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (8).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g3-2">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (2).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g3-3">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (6).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g4-1">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (15).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g4-2">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (4).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g4-3">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (10).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g5-1">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (3).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g5-2">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (1).jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapoint g5-3">
+                    <div class="mapoint-img-frame">
+                        <div class="mapoint-img-frame-bg"></div>
+                        <div class="mapoint-img">
+                            <img src="{{ static }}/images/index_smallpic/mapic1 (7).jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-silder-wrap">
+            <div class="banner-wrap">
+                <div id="js_banner" class="banner">
+                    <ul id="js_banner_img" class="banner_img clearfix">
+                        <li class="bgli01">
+                            <div class="bannerimgs one"></div>
+                        </li>
+                        <li class="bgli02">
+                            <div class="bannerimgs two"></div>
+                        </li>
+                        <li class="bgli03">
+                            <div class="bannerimgs three"></div>
+                        </li>
+                    </ul>
+                    <div class="banner_common">
+                        <a id="js_banner_pre" href="javascript:;" class="banner_pre"></a>
+                        <a id="js_banner_next" href="javascript:;" class="banner_next"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-bottom">
+            <a href="02供应链融资.html"></a>
+            <a href="03债权支付1.html"></a>
+        </div>
+    </div>
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+    <script src="{{ static }}/js/tab.js"></script>
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+	    $(function () {
+	        var $window = $(window),
+                window_width = $window.width();
+	        //$('#js_banner, #js_banner_img li').width(window_width);
+            var startFrame = 1;
+
+	        new $.Tab({/*添加圆点按钮*/
+	            target: $('#js_banner_img li'),
+	            effect: 'slide3d',
+	            animateTime: 1000,
+	            stay: 3000,
+	            //playTo: startFrame,
+	            autoPlay: true,
+	            merge: true,
+	            prevBtn: $('#js_banner_pre'),
+	            nextBtn: $('#js_banner_next')
+	        });
+	        //$('#js_banner_img').css('left', '-' + (window_width * startFrame) + 'px');
+            //
+            var $footer = $('.footer'),
+                $videoBox = $('#video-box'),
+                ua = window.navigator.userAgent;
+
+            if(/iphone|ipod|ios|android/gi.test(ua)) {
+            } else {
+                // FF13- 鼠标轮滑事件监听
+                document.addEventListener('DOMMouseScroll', showFooter, false);
+                window.onmousewheel = document.onmousewheel = showFooter;
+                try {
+                    // 视频
+                    var objVideo = document.createElement('video');
+                    objVideo.setAttribute('width', '100%');
+                    objVideo.setAttribute('autoplay', 'auto');
+                    objVideo.innerHTML = '<source type="video/mp4" src="{{ static }}/images/video.mp4">您的浏览器不支持Video标签，视频无法播放。建议使用最新的Chrome（谷歌）浏览器。';
+
+                    $videoBox.append(objVideo);
+                    // 视频时长
+                    //var duration = objVideo.duration;
+                    objVideo.oncanplay = function() {
+                        $('.index-map').hide();
+                        $('.index-bg3').fadeOut();
+                    }
+
+                    objVideo.onended = function() {
+                        $('.index-map').fadeIn(1000);
+                    }
+                    // 停止
+                    // objVideo.pause();
+                    // 播放
+                    // objVideo.play();
+                    // 是否到末尾
+                    // objVideo.ended;
+                    // 是否暂停
+                    // objVideo.paused
+                    // 结束
+                    // objVideo.onended = function() {}
+                    // http://www.w3school.com.cn/tags/html_ref_eventattributes.asp
+                    // http://www.w3school.com.cn/jsref/dom_obj_video.asp
+                }catch(e) {
+                    $('.index-bg3').fadeOut();
+                    $('.index-map').fadeIn(1000);
+                }
+
+            }
+
+
+            function showFooter(event) {
+                var event = event || window.event;
+                // animate 有 bug不去兼容 ie8
+                //$footer.css({ bottom: (event.wheelDelta < 0 ? '0' : '-272px')});
+                // FF
+                if (event.type == 'DOMMouseScroll' || event.type == 'mousewheel') {
+                    event.wheelDelta = (event.wheelDelta) ? event.wheelDelta / 120 : -(event.detail || 0) / 3;
+                }
+                $footer[event.wheelDelta < 0 ? 'addClass' : 'removeClass']('active');
+            }
+
+
+	    })
+    </script>
+{% endblock %}

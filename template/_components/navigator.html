@@ -1,0 +1,63 @@
+{% macro mainNav(static='/static') %}
+<nav class="nav-wrap">
+    <div class="nav-main">
+        <div class="nav-body">
+
+            <div class="frontpay-logo-box">
+                <a href="首页.html">
+                    <img src="{{ static }}/images/nav-logo.png" alt="钱途互联" />
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="clearfix">
+                    <ul class="oplist_one">
+                        <li>
+                            <i class="icon-uniE912"></i> <b>400-106-6698</b>
+                        </li>
+                        <li class="line">|</li>
+                        <li class="hover">
+                            <i class="icon-people"  style="font-size: 16px; top: 3px;"></i>
+                            <a href="###">客户服务 <i class="caret"></i></a>
+                            <div class="hover-link"><a href="###" class="j-feedback" data-target="#J_popup_fb">意见反馈</a></div>
+                        </li>
+                        <li class="line">|</li>
+                        <li>
+                            <i class="icon-phone" style="font-size: 16px; top: 4px;"></i>
+                            <a href="###">APP下载</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix fn-mt-15">
+                    <ul class="nav">
+                        <li>
+                            <a href="首页.html">首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02供应链融资.html">供应链融资
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03债权支付1.html">债权支付
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solution.html">行业方案
+                            </a>
+                        </li>
+                        <li>
+                            <a href="关于钱途.html">关于钱途
+                            </a>
+                        </li>
+                    </ul>
+                    <!--<div class="login-ctrl">
+                        <a href="javascript:;" class="btn primary" data-target="#J_popup_lgoin" style="width: 100px;">登录</a>
+                        <div class="divider"></div>
+                        <a href="###" class="btn links" style="padding: 0;">注册</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+{% endmacro %}

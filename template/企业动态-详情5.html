@@ -1,0 +1,88 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}信用支付为互联网金融平台打造创新应用场景 小企业E家信用惠上线{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业互联网金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(1) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>信用支付为互联网金融平台打造创新应用场景 小企业E家信用惠上线</h1>
+                            <div class="article-meta">
+                                <mark>信用支付</mark>
+                                <mark>互联网金融</mark>
+                                <mark>小企业E家</mark>
+                                <mark>信用惠</mark>
+                                <span>|</span>
+                                <span class="source">来源：钱途互联</span>
+                                <time>2014-09-27</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>
+                                <img src="{{static}}/images/about/zz07.jpg" alt="">
+                            </p>
+                            <p>2014年9月26日，招商银行·小企业E家首创的消费金融新模式---“信用惠商城”（简称“信用惠”）正式启动上线。据了解，“信用惠”区别于“京东白条”、“天猫分期”等赊账购物服务方式的独特之处在于：小企业e家平台整合招商银行优势资源，并根据会员的投资记录综合评估，授予可用信用作为其消费凭证。获得信用额度的会员，在“信用惠”消费时能享受额度高、预支周期长、零费用和享受预期收益等四大特权。</p>
+
+                            <p>据“信用惠”专业工作人员介绍，“信用惠”是银行为投资客户提供的高端产品及生活服务的增值消费应用场景，集结了大量品牌电商，提供涵盖衣食住行等高品质的产品。投资人在小企业E家投资成功后即可享受与投资本金和预期收益总和等额的信用额，通过信用惠商城、面卡信用支付来购买中意商品。整个购物过程不影响投资本金和收益，投资项目到期后再结算购物资金，项目时间有多长结算账期就有多长，实现投资消费两不误。</p>
+
+                            <p>谈及“信用惠”的研发初衷，相关负责人表示：“消费金融领域目前暂无接地气的产品，而在互联网金融的大环境中，消费金融的地位相当重要，因为它直接关系着最终端的消费者。作为唯一一家以信用为支付方式的B2C购物商城，“信用惠”要打通的是互联网金融用户“投资—融资—消费—理财—社交”等环节，提升用户的互联网购物体验、完善互联网金融服务内容。””</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}报告：三季度第三方移动支付逾2万亿元{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(1) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>报告：三季度第三方移动支付逾2万亿元</h1>
+                            <div class="article-meta">
+                                <mark>移动</mark>
+                                <mark>电商</mark>
+                                <mark>交易</mark>
+                                <span>|</span>
+                                <span class="source">来源：钱途互联</span>
+                                <time>2014-12-09</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>据了解，第三季度我国第三方支付市场移动支付业市场格局稳定，支付宝、拉卡拉和财付通蝉联前三，交易份额超过94%。</p>
+
+                            <p>近年来，随着电商企业在移动端的大力推广，电商交易对移动支付市场的贡献越来越大。易观分析师李烨认为，上一个十年，电子商务的主阵地在互联网，下一个十年，电商将走向社区甚至进一步下沉到乡镇市场。“线下比线上的潜力更大，大量实体店和消费者还没有走向互联网，因此依托线上支付、线下消费场景的O2O模式越来越受关注。”</p>
+
+                            <p>目前，移动支付三巨头布局O2O已初具规模。“现在电商平台正集体从线上到线下逐步渗透，连亚马逊都在谋划开实体店，社区已成为新一轮流量的入口。线上线下的渗透与融合将进一步增加移动支付交易量。”李烨说。</p>
+                            <p>
+                                <img src="{{static}}/images/about/xiangqing.jpg" alt="">
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

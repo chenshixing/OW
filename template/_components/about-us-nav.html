@@ -1,0 +1,83 @@
+{% macro render(cur='1') %}
+<div class="page-nav">
+    <div class="container">
+        <ul class="about-us-nav">
+            <li{% if cur == 1 %} class="active"{% endif %}>
+            <a href="关于钱途.html">公司简介</a>
+            </li>
+            <li{% if cur == 2 %} class="active"{% endif %}>
+            <a href="关于钱途-发展历程.html">发展历程</a>
+            </li>
+            <li{% if cur == 3 %} class="active"{% endif %}>
+            <a href="关于钱途-战略投资.html">战略投资</a>
+            </li>
+            <li{% if cur == 4 %} class="active"{% endif %}>
+            <a href="关于钱途-合作伙伴.html">合作伙伴</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro contact(cur='1') %}
+<div class="page-nav">
+    <div class="container">
+        <ul class="about-us-nav">
+            <li class="active">
+                <a href="联系我们.html">联系我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro news(cur='1') %}
+<div class="page-nav">
+    <div class="container">
+        <ul class="about-us-nav">
+            <li{% if cur == 1 %} class="active"{% endif %}>
+                <a href="企业动态.html">企业动态</a>
+            </li>
+            <li{% if cur == 2 %} class="active"{% endif %}>
+                <a href="媒体报道.html">媒体报道</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro private(cur='1') %}
+<div class="page-nav">
+    <div class="container">
+        <ul class="about-us-nav">
+            <li class="active">
+                <a href="隐私条款.html">隐私条款</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro legal(cur='1') %}
+<div class="page-nav">
+    <div class="container">
+        <ul class="about-us-nav">
+            <li class="active">
+                <a href="法律声明.html">法律声明</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro partner(cur='1') %}
+<div class="page-nav">
+    <div class="container">
+        <ul class="about-us-nav">
+            <li class="active">
+                <a href="合作商户.html">合作商户</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endmacro %}

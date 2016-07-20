@@ -1,0 +1,85 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}招商银行小企业E家信用惠改版上线 1点信用换小米电源{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(1) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>招商银行小企业E家信用惠改版上线 1点信用换小米电源</h1>
+                            <div class="article-meta">
+                                <mark>招商银行</mark>
+                                <mark>小企业e家</mark>
+                                <mark> 信用惠</mark>
+                                <span>|</span>
+                                <span class="source">来源：钱途互联</span>
+                                <time>2014-12-06</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>招商银行小企业e家的信用惠商城今日改版上线，并开展“感恩有您”的回馈活动，其中个别促销商品几乎等于免费购买，比如“小米移动电源”只需1个信用额度即可换购。</p>
+                            <p>随着互联网金融持续升温，以用户需求及体验为核心的互联网金融服务理念已经被越来越多的互联网金融平台所重视。为提供更好的用户体验，招商银行小企业E家信用惠将重新改版上线，增加了系列精选热门商品推荐给用户，并增加了代购服务，小企业E家用户可以用信用购买京东商城等知名电商的商品，由信用惠代购。</p>
+
+                            <p>据悉，信用惠是招商银行小企业E家为投资客户提供的高端产品及生活服务的增值消费应用场景。凡小企业e家用户在投资项目起息后，均可获得与投资本息等额的信用，该信用可用于购买信用惠的商品，购物免费享受超长账期，待投资项目到期后由小企业e家统一结算购物费用。“投资即授信，购物也赚钱”，信用惠真正让用户实现投资与消费两者兼得。</p>
+                            <p>信用惠相关工作人员表示，新版信用惠将提供包括来自各大品牌电商、涵盖衣食住行等高品质的产品供用户选择。信用惠最大特色在于用户投资的资金在投资期间不影响消费，甚至可以把要消费的资金先行投资赚钱，再同时进行消费。</p>
+                            <p>据介绍，为庆祝信用惠新版上线及回馈小企业E家的用户，信用惠商城近日开展“感恩有您”的回馈客户活动。在活动期间，信用惠商城提供了15种促销商品回馈给小企业E家客户，而且回馈给用户的促销商品折扣不低，个别甚至等于免费购买，比如“小米移动电源”只需1个信用额度即可换购。</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

@@ -1,0 +1,259 @@
+{% extends "_layout/base.html" %}
+
+
+{# favicon地址 #}
+{% block favicon %}
+   <link href="{{ static }}/images/favicon.ico" rel="icon" type="image/x-icon" />
+{% endblock %}
+
+
+{# 引用公共样式表 #}
+{% block globalCss %}
+	<link rel="stylesheet" href="{{ static }}/css/main.css?v={{ version }}">
+{% endblock %}
+
+
+{# 加载主导航 #}
+{% import "_components/navigator.html" as navigator %}
+
+{# 加载页脚 #}
+{% import "_components/footer.html" as Footer %}
+
+
+{# 公共Dom树 #}
+{% block body %}
+    <div class="main">
+        {{ navigator.mainNav() }}
+
+        {# 加载页面内容 #}
+        {% block content %}
+        {% endblock %}
+
+        {{ Footer.footer() }}
+    </div>
+    
+    
+ 
+{% endblock %}
+
+
+{# 加载弹窗内容 #}
+{% block modal %}
+    <!--意见反馈弹层-->
+    <div class="popwin-bg feedback-pop" id="J_popup_fb">
+        <div>
+            <b></b>
+            <div class="popwin-wrap feedback-wrap">
+                <a href="javascript:void(0)" class="popwin-close j-feedback-close" data-popup="#J_popup_fb">&times;
+                </a>
+                <div class="popwin-content">
+                    <div class="popwin-head">意见反馈</div>
+                    <div class="popwin-bd">
+                        <form action="#" class="feedback-frm">
+                            <div class="feedback-frm-item">
+                                <span class="ineed">*</span>
+                                <input type="text" placeholder="请输入您的姓名" class="feedback-frm-input" />
+                            </div>
+                            <div class="feedback-frm-item">
+                                <input type="text" placeholder="请输入您的手机号码" class="feedback-frm-input" />
+                            </div>
+                            <div class="feedback-frm-item">
+                                <span class="ineed">*</span>
+                                <input type="text" placeholder="请输入您的邮箱" class="feedback-frm-input" />
+                            </div>
+                            <div class="feedback-frm-item">
+                                <span class="ineed">*</span>
+                                <textarea class="feedback-frm-input feedback-frm-textarea"></textarea>
+                            </div>
+                            <div class="feedback-frm-item">
+                                您还可以输入<em id="j-txt-limit">200</em>字
+                            </div>
+                            <div class="feedback-frm-item">
+                                <button type="button" class="feedback-frm-btn feedback-frm-btn-primary">提交</button>
+                                <button type="button" class="feedback-frm-btn fn-ml-20 j-feedback-close" data-popup="#J_popup_fb">取消</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 登录注册弹窗 -->
+<div class="popwin-bg feedback-pop" id="J_popup_lgoin">
+    <div>
+        <b></b>
+        <div class="popwin-wrap sign-wrap">
+
+            <!-- 关闭弹窗 -->
+            <a href="###" class="popwin-close" id="signClose">
+                <i class="icon-cross"></i>
+            </a>
+
+            <!-- 弹窗tab -->
+            <ul class="sign-tab-wrap">
+                <li class="active">
+                    <a href="#stc1" data-toggle="tab">
+                        个人用户
+                    </a>
+                </li>
+                <li>
+                    <a href="#stc2" data-toggle="tab">
+                        商家用户
+                    </a>
+                </li>
+            </ul>
+
+            <!-- #stc1内容 -->
+            <div class="tab-pane active" id="stc1">
+
+                <!-- 个人注册页面 -->
+                <div class="forms" id="pSignUp">
+                    <p>
+                        已有钱沿支付账号？
+                    </p>
+                    <a href="###" class="default-btn secondary" id="Show_pSignIn">
+                        马上登录
+                    </a>
+                    <div class="sign-left">
+                        <h1>
+                            注册钱沿支付
+                        </h1>
+                        <form>
+                            <fieldset>
+                                <legend>signup form</legend>
+                                <div class="form-ctrl-wrap signfrom">
+                                    <div class="form-ctrl-box">
+                                        <div class="fv-wrap" style="display: block;">
+                                            手机号已注册！
+                                            <span class="shadow"></span>
+                                            <span></span>
+                                        </div>
+                                        <input class="form-ctrl" type="text" placeholder="请输入手机号码" name="phoneNumber"/>
+                                    </div>
+                                </div>
+                                <div class="form-ctrl-wrap signfrom for-ic">
+                                    <div class="form-ctrl-box">
+                                        <div class="fv-wrap" style="display: block;">
+                                            验证码错误验证码错误验证码错误验证码错误！
+                                            <span class="shadow"></span>
+                                            <span></span>
+                                        </div>
+                                        <input class="form-ctrl" type="text" placeholder="请输入验证码" name="vc"/>
+                                    </div>
+                                    <a href="###" class="default-btn tertiary">
+                                        获取验证码
+                                    </a>
+                                </div>
+                                <div class="form-ctrl-wrap" style="padding-bottom: 12px;">
+                                    <label class="form-label">
+                                        <input type="checkbox" checked="checked" name="agreement" id="J_sign_argeement" />
+                                        我已阅读并同意《<a href="userServiceAgreement.html" target="_blank" class="label-link">钱沿支付用户服务协议</a>》
+                                    </label>
+                                </div>
+                                <div class="form-ctrl-wrap">
+                                    <div class="form-ctrl-box">
+                                        <button type="submit" id="J_sign_submit" class="default-btn primary">
+                                            立即开通
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- 个人登录页面 -->
+                <div class="forms" id="pSignIn" style="display: none;">
+                    <p>
+                        还没有钱沿支付账号？
+                    </p>
+                    <a href="###" class="default-btn secondary" id="Show_pSignUp">
+                        马上注册
+                    </a>
+                    <div class="sign-left">
+                        <h1>
+                            登录钱沿支付
+                        </h1>
+                        <form>
+                            <fieldset>
+                                <legend>signin form</legend>
+                                <div class="form-ctrl-wrap signfrom">
+                                    <div class="form-ctrl-box">
+                                        <div class="fv-wrap" style="display: block;">
+                                            手机号错误！
+                                            <span class="shadow"></span>
+                                            <span></span>
+                                        </div>
+                                        <input class="form-ctrl" type="text" placeholder="手机号码" name="phoneNumber"/>
+                                    </div>
+                                </div>
+                                <div class="form-ctrl-wrap signfrom" style="padding-bottom: 42px;">
+                                    <div class="form-ctrl-box">
+                                        <div class="fv-wrap" style="display: block;">
+                                            密码错误！
+                                            <span class="shadow"></span>
+                                            <span></span>
+                                        </div>
+                                        <input class="form-ctrl" type="password" placeholder="登录密码" name="password"/>
+                                    </div>
+                                </div>
+                                <div class="form-ctrl-wrap">
+                                    <div class="form-ctrl-box">
+                                        <button type="submit" class="default-btn primary">
+                                            立即登录
+                                        </button>
+                                        <a href="###" class="default-btn link-btn">
+                                            忘记密码？
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- #stc2内容 -->
+            <div class="tab-pane" id="stc2">
+                <b>
+                    暂未开放商家登录&nbsp;&nbsp;/&nbsp;&nbsp;注册
+                </b>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!--登录注册-->
+    <!--<div class="modal-background display-none" id="Login" role="dialog">
+            <div class="modal-layer">
+                <div class="modal-position">
+                    <div class="modal-wrap animated zoomInDown">
+                        <div class="modal-head">
+                            模态窗口
+                            <i class="modal-close" title="关闭"></i>
+                        </div>
+                        <div class="modal-body">
+                            <div style="height: 300px; text-align: center; line-height: 300px;">
+                                模态窗口高度不限
+                            </div>
+                            <div class="text-align-right plural-btns fn-pt-30">
+                                <a href="###" class="btn links">上一步</a>
+                                <button type="button" class="btn default">取消</button>
+                                <button type="button" class="btn primary">确认</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+{% endblock %}
+
+
+{# 引用公共 javascript 文件 #}
+{% block globalJs %}
+    <script src="{{ static }}/js/jquery.min.js"></script>
+    <script src="{{ static }}/js/common.js"></script>
+{% endblock %}

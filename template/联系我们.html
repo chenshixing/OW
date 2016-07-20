@@ -1,0 +1,107 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}关于钱途{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">  
+        <div class="page-banner banner-contact-us">
+            <div class="banner-contact-us">
+                <h2 class="display-none">Contact Us</h2>
+            </div>
+        </div>
+
+        {{ pageNav.contact() }}
+
+        <div class="page-main container">
+            <article class="page-article clearfix">
+                <!--<img src="{{ static }}/images/about/img1.jpg" alt="前途互联" class="pull-right about-article-post">-->
+                <section class="page-article-bd clearfix contact-page">
+                    <div class="contact-page-txt">
+                        <h3 class="contact-page-title">服务热线：400-106-6698</h3>
+                        <p>
+                            业务合作邮箱：<a href="mailto:frontpay_bd@frontpay.cn ">frontpay_bd@frontpay.cn </a><br />
+                            客户咨询邮箱：<a href="mailto:frontpay_service@frontpay.cn">frontpay_service@frontpay.cn</a>
+                        </p>
+
+                        <h3>广州总部</h3>
+                        <p>
+                            TEL：020-61847588 <br />
+                            FAX：020-61847588 <br />
+                            ADD：广东省广州市天河区体育西路109号高盛大厦8层
+                        </p>
+
+                        <h3>深圳办事处</h3>
+                        <p>
+                            TEL：0755-83476005 <br />
+                            FAX：0755-82774620 <br />
+                            ADD：广东省深圳市福田区深南大道7006号富春东方大厦7层
+                        </p>
+                    </div>
+
+                    <div id="contact-map" class="contact-map">
+                        <a href="javascript:;" class="active">广州总部</a>
+                        <a href="javascript:;">深圳办事处</a>
+                        <div class="map-box active">
+                            <iframe width="288" height="379" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/N2kv3"></iframe>
+                        </div>
+                        <div class="map-box">
+                            <iframe width="288" height="379" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/nSkv3"></iframe>
+                        </div>
+
+                    </div>
+                    
+                </section>
+            </article>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+        $(function() {  
+            // 地图切换
+            var $mapbox = $('.map-box');
+            var $tab = $('#contact-map').find('a');
+            $tab.on('click', function() {
+                var index = $(this).index();
+                $tab.removeClass('active');
+                $(this).addClass('active');   
+                $mapbox.removeClass('active').eq(index).addClass('active');
+            });
+        })
+    </script>
+{% endblock %}

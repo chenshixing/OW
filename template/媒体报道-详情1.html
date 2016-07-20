@@ -1,0 +1,84 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}招行小企业E家 布局“互联网+供应链金融”{% endblock %}
+{% block keywords %}钱途互联，钱沿支付，E+账户，信用惠，产业金融，资产增值，资产结算{% endblock %}
+{% block description %}钱途互联是国内首家专注于通过互联模式，基于企业交易过程的电子登记系统（品牌名称“E+账户”），对接优质的金融资源，为中小企业提供增值、新型供应链融资及创新支付结算的产业金融服务商。{% endblock %}
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+class="page"
+{% endblock %}
+
+{% import "_components/about-us-nav.html" as pageNav %}
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="page-wrap">
+        <div class="page-banner">
+            <div class="banner-news">
+                <h2 class="display-none">News</h2>
+            </div>
+        </div>
+
+        {{ pageNav.news(2) }}
+
+        <div class="page-main container">
+            <div class="page-article clearfix">
+                <div class="text-align-right fn-pb-10">
+                    <a href="javascript:;void(0)" class="link-standard"><i class="icon-chevron-thin-left fs-12"></i>返回列表</a>
+                </div>
+                <section class="page-article-bd">
+                    <article class="article">
+                        <header>
+                            <h1>招行小企业E家 布局“互联网+供应链金融”</h1>
+                            <div class="article-meta">
+                                <span class="source">来源：新浪新闻</span>
+                                <time>2015-05-14</time>
+                            </div>
+                        </header>
+                        <div class="article-content">
+                            <p>
+                                <img src="{{static}}/images/about/news-3.jpg" alt="">
+                            </p>
+                            <p><a href="http://news.sina.com.cn/o/2015-05-14/065431830439.shtml" target="_blank">http://news.sina.com.cn/o/2015-05-14/065431830439.shtml</a></p>
+                            <p>5月13日，招行小企业E发布“互联网+供应链金融”创新模式与解决方案，旨在以互联网的开放模式无缝整合供应链的信息流、资金流、商流、物流、单据流，打造“支付+投资+融资”“一站式”解决方案。</p>
+
+                            <p>招商银行此举着眼于布局产业互联网金融，聚焦产业供应链、大型商品交易市场、互联网电商平台等各类交易模式及应用场景，以极致客户体验为目标，以互联网模式为核心兼顾O2O商务模式，提供涵盖账户体系、收付交易、供应链融资、投资增值为一体的综合化交易银行服务方案——“E+账户”。</p>
+
+                            <p>这是招商银行应用互联网思维和技术，立足“支付、应用场景、交易渠道”三个关键点，重塑传统银行“存贷汇”功能，打造公司金融新优势的亮剑之举。（张 怡）</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+{% include "_components/footer.html" %}
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+	<script>
+    </script>
+{% endblock %}

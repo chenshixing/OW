@@ -1,0 +1,1196 @@
+{% extends "_layout/layout.html" %}
+
+
+{# 填写页面 title #}
+{% block title %}钱途互联{% endblock %}
+{% block keywords %}供应链融资，债权支付，一体化资金管理，一体化融资贷款{% endblock %}
+{% block description %}钱途互联利用自身资源及研发实力，突破局限性打造电子登记账户系列产品和解决方案，对企业及其客户提供一体化资金管理能力和融资贷款服务。{% endblock %}
+
+
+
+{# 页面专有样式表地址 #}
+{% block css %}
+{% endblock %}
+
+
+{# 编写页面内联 css 代码 #}
+{% block stylePage %}
+	<style>
+	</style>
+{% endblock %}
+
+
+{# 引用页面 body 类 #}
+{% block bodyClass %}
+    class="solution-body"
+{% endblock %}
+
+
+{# 加载页面内容 #}
+{% block content %}
+    <div class="solution-content-wrap">
+        
+        <div class="solution-content-box">
+            <!--页面首先出现的元素-->
+            <div class="pic1"></div>
+            <div class="pic2">
+                <h1>供应链融资</h1>
+                <div class="cc">
+                    <a href="#/supplyChain">了解更多&nbsp;<i class="icon-chevron-thin-right"></i></a>
+                </div>
+            </div>
+            <div class="pic3">
+                <h1>债权支付</h1>
+                <div class="cc">
+                    <a href="#/debtPay">了解更多&nbsp;<i class="icon-chevron-thin-right"></i></a>
+                </div>
+            </div>
+
+            <!--点击供应链融资 了解更多 出现的元素-->
+            <img data-src="{{ static }}/images/融资供应链详情.png" src="{{ static }}/images/black30.png?v=20160310" alt="" width="406" height="148" class="pic2-info-img"/>
+            <div class="pic2-content">   
+
+                <!--供应链融资 part1 导航-->
+                <div class="ss-tab-wrap">
+                    <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic1.png?v=20160314" width="166" height="118" alt=""/>
+                    <a href="#/supplyChain" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic2-nav1">
+                        <li class="curr">
+                            <a href="#/supplyChain/accountsReceivable/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/supplyChain/accountsReceivable/case">
+                                成功案例
+                            </a>
+                        </li>  
+                    </ul>
+                </div>
+
+                <!--供应链融资 part2 导航-->
+                <div class="ss-tab-wrap">
+                    <img width="166" height="118" src="{{static}}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic2.png?v=20160314" alt=""/>
+                    <a href="#/supplyChain" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic2-nav2">  
+                        <li class="curr">
+                            <a href="#/supplyChain/insurance/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/supplyChain/insurance/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--供应链融资 part3 导航-->
+                <div class="ss-tab-wrap">
+                    <img width="166" height="118" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic3.png?v=20160314" alt=""/>
+                    <a href="#/supplyChain" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic2-nav3">
+                        <li class="curr">
+                            <a href="#/supplyChain/housingLoan/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/supplyChain/housingLoan/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--供应链融资 part4 导航-->
+                <div class="ss-tab-wrap">
+                    <img width="166" height="118" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic4.png?v=20160314" alt=""/>
+                    <a href="#/supplyChain" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic2-nav4">
+                        <li class="curr">
+                            <a href="#/supplyChain/creditable/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/supplyChain/creditable/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--供应链融资 part5 导航-->
+                <div class="ss-tab-wrap">
+                    <img width="166" height="118" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic5.png?v=20160314" alt=""/>
+                    <a href="#/supplyChain" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic2-nav5">
+                        <li class="curr">
+                            <a href="#/supplyChain/receipt/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/supplyChain/receipt/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--供应链融资-->
+                <ul>
+                    <li style="left: 0;">
+                        <a href="#/supplyChain/accountsReceivable/introduce">
+                            <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic1.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 208px;">
+                        <a href="#/supplyChain/insurance/introduce">
+                            <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic2.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 416px;">
+                        <a href="#/supplyChain/housingLoan/introduce">
+                            <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic3.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 624px;">
+                        <a href="#/supplyChain/creditable/introduce">
+                            <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic4.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 832px;">
+                        <a href="#/supplyChain/receipt/introduce">
+                            <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic2_content_pic5.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!--点击债权支付 了解更多 出现的元素-->
+            <img width="440" height="214" src="{{ static }}/images/债权支付详情.png" data-src="{{ static }}/images/债权支付详情.png" alt="" class="pic3-info-img"/>
+            <div class="pic3-content">
+
+                <!--债权支付 part1 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic1.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav1">
+                        <li class="curr">
+                            <a href="#/debtPay/investment/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/investment/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/investment/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付 part2 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic2.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav2">
+                        <li class="curr">
+                            <a href="#/debtPay/prepayment/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/prepayment/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/prepayment/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付 part3 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic3.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav3">
+                        <li class="curr">
+                            <a href="#/debtPay/ecommerce/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/ecommerce/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/ecommerce/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付 part4 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic4.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav4">
+                        <li class="curr">
+                            <a href="#/debtPay/guarantee/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/guarantee/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/guarantee/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付 part5 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic5.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav5">  
+                        <li class="curr">
+                            <a href="#/debtPay/deduction/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/deduction/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/deduction/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付 part6 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic6.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav6">
+                        <li class="curr">
+                            <a href="#/debtPay/memberPrepay/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/memberPrepay/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/memberPrepay/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付 part7 导航-->
+                <div class="ss-tab-wrap ss-tab-wrap2">
+                    <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic7.png?v=20160314" alt=""/>
+                    <a href="#/debtPay" class="ssback">
+                        <i class="icon-chevron-thin-left"></i>&nbsp;返回
+                    </a>
+                    <ul class="ss-tab-ul" id="pic3-nav7">
+                        <li class="curr">
+                            <a href="#/debtPay/settlement/introduce">
+                                概述
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/settlement/scene">
+                                应用场景
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/debtPay/settlement/case">
+                                成功案例
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--债权支付-->
+                <ul>
+                    <li style="left: 0;">
+                        <a href="#/debtPay/investment/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic1.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 143px;">
+                        <a href="#/debtPay/prepayment/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic2.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 286px;">
+                        <a href="#/debtPay/ecommerce/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic3.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 429px;">
+                        <a href="#/debtPay/guarantee/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic4.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 572px;">
+                        <a href="#/debtPay/deduction/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic5.png?v=20160314" alt=""/>
+                        </a>
+                    </li>   
+                    <li style="left: 715px;">
+                        <a href="#/debtPay/memberPrepay/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic6.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                    <li style="left: 858px;">
+                        <a href="#/debtPay/settlement/introduce">
+                            <img width="138" height="104" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/pic3_content_pic7.png?v=20160314" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!--点击供应链融资五个部分-->
+        <!--供应链融资 part1-->
+        <div class="solution-slider-wrap"  id="pic2-content-1">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic2-nav1"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic2-nav1"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img width="397" height="418" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/financing_01_img02.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应收账款融资
+                                    </h1>
+                                    <p>
+                                        以卖方企业（供应商）为中心，针对其赊销产生的应收账款为其提供应收类融资服务。客户可在网上上传标的物(应收账款、订单信息、发票等)以及双向交流（编辑、审批等），简化了应收款融资流程，减少成本、错误、遗漏和繁琐的手工流程，并且还款方式灵活。
+                                    </p>
+                                    <p>
+                                        <b>适用条件：</b>具备一定盈利能力、经营稳定、有健全独立核算制度<br />
+                                        <b>适用行业：</b>零售业、制造业、消费品、物流等行业<br />
+                                        <b>适用对象：</b>所有供应商、供货商等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/01_01.jpg"/>
+                                        <h4 title="北京金港建设股份有限公司">
+                                            北京金港建设股份有限公司
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--供应链融资 part2-->
+        <div class="solution-slider-wrap"  id="pic2-content-2">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic2-nav2"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic2-nav2"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img width="397" height="418" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/financing_01_img03.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        新型保险融资
+                                    </h1>
+                                    <p>
+                                        是嵌入各类保险投保场景，凭保险公司信用记录可以获得免担保信用贷款。例如为物流企业提供车险分期融资方案，该融资方案直接与车险投保业务有机结合与绑定，在保险公司自身交易场景中为其客户提供全流程在线金融服务方案，对合作保险公司自身业务发展有着极强的推动作用，实现了多方共赢。
+                                    </p>
+                                    <p>
+                                        <b>适用条件：</b>信用良好、具备银行认可的境内外保险公司开具的保险保单<br />
+                                        <b>适用行业：</b>保险行业<br />
+                                        <b>适用对象：</b>财产保险、人身保险的投保企业、个人
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/02_01.jpg"/>
+                                        <h4 title="安邦保险集团股份有限公司">
+                                            安邦保险集团股份有限公司
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/02_02.jpg"/>
+                                        <h4 title="中国人民财产保险股份有限公司大连市分公司">
+                                            中国人民财产保险股份有限公司大连市分公司
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--供应链融资 part3-->
+        <div class="solution-slider-wrap"   id="pic2-content-3">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic2-nav3"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic2-nav3"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img width="397" height="418" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/financing_01_img04.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        票据融资
+                                    </h1>
+                                    <p>
+                                        企业以其持有的商业承兑汇票或银行承兑汇票作为质押担保，申请融资。票据到期之后，以企业兑付或银行兑付的资金作为还款来源。客户可在网上上传标的物（票据、交易合同、发票等）以及双向交流（编辑、审批等），简化了票据融资流程，减少成本、错误、遗漏和繁琐的手工流程，且还款方式灵活。
+                                    </p>
+                                    <p>
+                                        <b>适用条件：</b>具备一定盈利能力、经营稳定、有健全独立核算制度<br />
+                                        <b>适用行业：</b>零售业、制造业、消费品、物流等行业<br />
+                                        <b>适用对象：</b>所有供应商、供货商、经销商等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/03_01.jpg"/>
+                                        <h4 title="南京鑫杰高速公路材料有限公司">
+                                            南京鑫杰高速公路材料有限公司
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--供应链融资 part4-->
+        <div class="solution-slider-wrap"   id="pic2-content-4">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic2-nav4"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic2-nav4"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img width="397" height="418" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/financing_01_img05.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        信用融资
+                                    </h1>
+                                    <p>
+                                        与核心企业、银行合作，针对优质客户打造的供应链金融产品。通过无抵押、纯信用的模式，基于交易数据等，以全流程电子化对接为客户提供信用融资服务，解决客户流动资金紧缺、贷款难的问题。
+                                    </p>
+                                    <p>
+                                        <b>适用条件：</b>具备良好、完善的网络信用和交易记录<br />
+                                        <b>适用行业：</b>零售业、制造业、消费品、物流等行业<br />
+                                        <b>适用对象：</b>如电子商务企业、ETC卡企业
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/04_01.jpg"/>
+                                        <h4 title="山东高速">
+                                            山东高速
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--供应链融资 part5-->
+        <div class="solution-slider-wrap"   id="pic2-content-5">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic2-nav5"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic2-nav5"></a>
+                <ul class="ss">  
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img width="397" height="418" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/financing_01_img01.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        仓单融资
+                                    </h1>
+                                    <p>
+                                        又称为“仓单质押融资”，专门为供应链企业量身打造的货押融资金融服务。当企业有资金需求时，可将货物运到指定仓库进行质押估价后，并在平台中提供相关申请资料，即可快速获得融资资金，且支持提前赎回货物。
+                                    </p>
+                                    <p>
+                                        <b>适用条件：</b>生产经营正常、信用良好、有货物存放专业仓储公司<br />
+                                        <b>适用行业：</b>制药/医疗服务行业、制造业、消费品等行业<br />
+                                        <b>适用对象：</b>上游生产商、下游经销商、贸易公司等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/05_01.jpg"/>
+                                        <h4 title="九州通医药集团">
+                                            九州通医药集团
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--点击债权支付七个部分-->
+        <!--债权支付 part1-->
+        <div class="solution-slider-wrap" id="pic3-content-1">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav1"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav1"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    投资平台信用支付解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    适用于安全的投资平台，投资者在投资后已经拥有了债权。<br /><br />
+                                    钱沿支付为这些平台提供信用惠商城，信用惠商城是支持“钱沿支付”的各类电商的导航入口，也是这些电商的特色优惠商品陈列。<br /><br />
+                                    投资者通过信用惠商城，进入到各类电商消费，使用“钱沿支付”消费，可实现债权转移支付，从而提前实现流动性。
+                                </p>
+                                <div class="case">
+                                    适用于安全的投资平台
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img  src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img01.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对拥有丰富资金优势的投融资平台,为投资人提供丰富的消费场景，投资享信用，信用当钱花。投资者在投融资平台上进行理财购买后，可以通过债权转让获得信用在商城进行预消费。
+                                    </p>
+                                    <p>
+                                        <b>适用行业/平台</b>：金融行业，投融资平台<br />
+                                        <b>适用对象：</b>投资者，理财者，电商商家
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/huarunyinhang.jpg"/>
+                                        <h4 title="资产交易平台">
+                                            资产交易平台
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/ningboyinhang.jpg"/>
+                                        <h4 title="直销银行·投融资平台">
+                                            直销银行·投融资平台
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--债权支付 part2-->
+        <div class="solution-slider-wrap" id="pic3-content-2">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav2"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav2"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    电商预付费支付解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    售卖快速消耗品的电商，有圈存客户的愿望，希望客户能预存资金在平台，并能实时将预存资金转为消费<br />
+                                    钱沿支付为电商平台提供支付插件，让其拥有自己品牌的“余额宝”，来实现上述功能。
+                                </p>
+                                <div class="case">
+                                    适用于具备重复消费属性的电商平台
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img02.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对预付费类服务电商，通过预付充值形式，达到留存、转换客户及促进消费的需求。消费者通过充值虚拟钱包，在电商网站进行快速消费。
+                                    </p>
+                                    <p>
+                                        <b>适用行业：</b>	交通运输/电子通讯/快速消费品/互联网行业等<br />
+                                        <b>适用对象：</b>	消费者、服务运营商、商家、公交卡/地铁卡市民，小区居民等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/qulv.jpg"/>
+                                        <h4 title="趣旅网">
+                                            趣旅网
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/1905.jpg"/>
+                                        <h4 title="1905电影网">
+                                            1905电影网
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/mei.jpg"/>
+                                        <h4 title="魅力惠">
+                                            魅力惠
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/zouxiu.jpg"/>
+                                        <h4 title="走秀网">
+                                            走秀网
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/vianmall.jpg"/>
+                                        <h4 title="微尚城">
+                                            微尚城
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img width="258" height="92" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/luxji.jpg"/>
+                                        <h4 title="奢集">
+                                            奢集
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--债权支付 part3-->
+        <div class="solution-slider-wrap" id="pic3-content-3">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav3"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav3"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    垂直电商平台支付解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    平台具备某种担保约束机制，冻结买卖双方交易过程中的资金，在买卖双方交易完成交割时再释放资金。<br />
+                                    钱沿支付为电商平台提供完整支付插件，对上述资金进行托管与增值，并根据平台指令，进行清算。
+                                </p>
+                                <div class="case">
+                                    适用于买卖双方进行商品贸易的电商平台
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img width="396" height="418" src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img03.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对提供用户和入驻商户双方进行商品/服务交易的电商平台，在途及账期资金可增值，0交易手续费，安全、便捷。
+                                    </p>
+                                    <p>
+                                        <b>适用行业：</b>制药/医疗服务行业，外包/中介/服务行业，电商服务平台等。<br />
+                                        <b>适用对象：</b>制药厂商、供应商、经销商，消费者，外包中介、外资企业、中小企业、员工，增值服务供应商等。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">  
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/zhenyaocai.jpg"/>
+                                        <h4 title="九州通医药集团">
+                                            九州通医药集团
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--债权支付 part4-->
+        <div class="solution-slider-wrap" id="pic3-content-4">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav4"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav4"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    交易平台担保支付解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    此类平台对交易安全问题要求较高，有效的解决电子商务交易中的信用问题，极大促进了电子商务成功率。钱沿支付可为此类应用场景提供担保支付交易平台，保障资金安全，保障消费者的权益。
+                                </p>
+                                <div class="case">
+                                    适用于电子商务类平台
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img04.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对电子商务平台，为其交易双方提供资金安全担保服务，保障其交易资金安全，同时保障消费者合法权益。
+                                    </p>
+                                    <p>
+                                        <b>适用行业：</b>制造业/消费品/物流等行业/投资/债券/信托/典当等金融行业<br />
+                                        <b>适用对象：</b>厂家、供应商、经销商、分销商、消费者、商家，投资者、拍卖者等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--债权支付 part5-->
+        <div class="solution-slider-wrap" id="pic3-content-5">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav5"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav5"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    企业自动划扣支付解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    企业与消费者已达成了某种有条件自动支付方案，在触发条件达到时，企业有权对消费者的资金进行划扣。如水电煤的缴费划扣，如电信话费的划扣，如粤通卡ETC的划扣，如羊城通地铁收费的划扣….支付场景无处不在。钱沿支付为这类场景提供支付接口或支付插件，对消费者的资金进行增值，并支持根据企业的指令进行划扣转移。
+                                </p>
+                                <div class="case">
+                                    适用于已与消费者达成某种有条件自动支付方案企业
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img05.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对已与消费者签约并达成自动划扣协议的企业，为其提供资金自动划扣服务，且账面资金可增值，免去消费者柜台缴费繁琐手续。
+                                    </p>
+                                    <p>
+                                        <b>适用行业/平台：</b>交通运输/电子通讯/快速消费品/互联网行业等<br />
+                                        <b>适用对象：</b>消费者、服务运营商、商家、公交卡/地铁卡市民，小区居民等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/sdhs.jpg"/>
+                                        <h4 title="山东高速">
+                                            山东高速
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/yangchengtong.jpg"/>
+                                        <h4 title="羊城通">
+                                            羊城通
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/gwbn.jpg"/>
+                                        <h4 title="长城宽带">
+                                            长城宽带
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/wankewuye.jpg"/>
+                                        <h4 title="万科物业">
+                                            万科物业
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--债权支付 part6-->
+        <div class="solution-slider-wrap" id="pic3-content-6">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav6"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav6"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    线下商户会员预付费解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    此类商户希望客户能预付会员费，并能实时使用预付资金进行消费，存在吸引客户预付并达到有效转化的需求。钱沿支付可为此类电商平台提供支付终端机，帮助商户快速留存和转化客户。
+                                </p>
+                                <div class="case">
+                                    适用于实体店店铺商户
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img06.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对实体商家会员，为其提供会员预付费服务，促进线下消费，提高资本运作能力。消费者可通过充值消费卡余额，在商家门店直接购买商品
+                                    </p>
+                                    <p>
+                                        <b>适用行业/平台：</b>零售业/餐饮业/服务业<br />
+                                        <b>适用对象：</b>消费者、零售店、食家、酒楼、俱乐部
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--债权支付 part7-->   
+        <div class="solution-slider-wrap" id="pic3-content-7">
+            <div class="ss-box">
+                <a href="javascript:;void(0)" class="ss-prev" data-target="#pic3-nav7"></a>
+                <a href="javascript:;void(0)" class="ss-next" data-target="#pic3-nav7"></a>
+                <ul class="ss">
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content detail">
+                                <h1>
+                                    集团供应链跨行支付结算解决方案
+                                </h1>
+                                <div class="se-title">
+                                    <h1>概述</h1>
+                                </div>
+                                <p>
+                                    传统网银已经无法灵活适应集团供应链的支付清算要求。钱沿支付支持多家银行，一点接入验证后，创新通过债权转移实现跨行跨地域的支付结算，同时实现在途资金的增值。<br /><br />
+                                    钱沿支付亦能灵活根据核心企业的业务需求，对收付、结算、统计进行个性化统计，并实现与其ERP系统无缝对接.
+                                </p>
+                                <div class="case">
+                                    适用于集团供应链多对一跨地域、跨行支付
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/solution_as_img07.jpg" alt="" class="img"/>
+                                <div class="text">
+                                    <h1>
+                                        应用场景
+                                    </h1>
+                                    <p>
+                                        针对供应链集团型企业，提供多对一跨地域、跨行支付途径，集团企业通过自动资金归集功能，将其各地市分公司、承包商跨行经营款项统一汇总管理，且账面资金可增值。
+                                    </p>
+                                    <p>
+                                        <b>适用行业/平台：</b>物流/零售业/农牧业/消费品等行业<br />
+                                        <b>适用对象：</b>集团企业的分/子公司、承包商、经销商等
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="bg"></div>
+                            <div class="inner-content">
+                                <div class="se-title">
+                                    <h1>成功案例</h1>
+                                </div>
+                                <ul class="se-list">
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/zhongyuanjituan.jpg"/>
+                                        <h4 title="中远集团">
+                                            中远集团
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/kunbaijituan.jpg"/>
+                                        <h4 title="昆明百货公司">
+                                            昆明百货公司
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/jinfengkeji.jpg"/>
+                                        <h4 title="金风科技">
+                                            金风科技
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <img src="{{ static }}/images/black30.png?v=20160310" data-src="{{ static }}/images/partners/chinamb.jpg"/>
+                                        <h4 title="终端公司分销平台">
+                                            终端公司分销平台
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--背景斜纹阴影-->
+        <div class="solution-content-shadow"></div>
+        <a href="solution.html" class="back-to-fs"><i class="icon-chevron-thin-left"></i>返回行业方案</a>
+
+    </div>
+{% endblock %}
+
+
+{# 页面专有 javascript 文件地址 #}
+{% block js %}
+{% endblock %}
+
+
+{# 编写页面内联 javascript 代码 #}
+{% block jsPage %}
+    <script src="{{static}}/js/director.min.js"></script>
+	<script src="{{ static }}/js/solution.js"></script>
+{% endblock %}
